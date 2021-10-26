@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchtrain</title>
+</head>
+<body bgcolor="#F0F8FF">
+    <h1><center>Search Trains!!</center></h1>
+    <hr>
+    <div>
+    <form action="listoftrains.html"  >
+        <label for="fromStation">From</label>
+        <input type="text" name="fromStation" id="fromStation"  placeholder="Enter the station" required autofocus list="stations"><br><br>
+        <datalist id="stations">
+            <option disabled>----SELECT THE STATION--</option>
+            <option value="NGL">Nagercoil</option>
+            <option value="MDU">Madurai</option>
+            <option value="KZT">Kuzhithurai</option>
+
+        </datalist>
+</div>
+<div>
+    <label for="tostation">ToStation</label>
+    <input type="text" name="ToStation" id="toStation" placeholder="Enter the destination" list="stations"><br><br>
+    <datalist id="stations">
+        <option disabled>----SELECT THE STATION--</option>
+        <option value="NGL">Nagercoil</option>
+        <option value="MDU">Madurai</option>
+        <option value="KZT">Kuzhithurai</option>
+
+</div>
+<div>
+    
+    <label for="Journey date">Journey Date</label>
+    <input type="date" name="date" id="journeyDate" required min="2021-10-18" max="2021-12-18" value="2021-10-21">
+    </div>
+    <div>
+        <br>
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+</body>
+</html>
